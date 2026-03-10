@@ -5,12 +5,13 @@ Rebuild webu lakro.eu (původně WordPress + Avada theme) jako moderní Next.js 
 Firma LAKRO, s.r.o. — rodinná firma založená 1995 v Praze. Tři divize: slaboproudé systémy, realizace staveb, hausbóty.
 
 ## Technologie
-- **Next.js 16** se static exportem (`output: "export"` v next.config.ts)
+- **Next.js 16** nasazený na **Vercel** (https://web-lemon-three-91.vercel.app)
 - **TypeScript**
 - **Tailwind CSS v4**
 - Fonty: **Montserrat** (body text), **Raleway** (nadpisy) — přes next/font/google
-- Build: `npm run build` → výstup v `out/`
+- Build: `npm run build`
 - Dev: `npm run dev` → http://localhost:3000
+- Deploy: push do main = automatický deploy na Vercel
 
 ## Brand
 - Hlavní červená: `#e4002b` (brand-red)
@@ -19,13 +20,22 @@ Firma LAKRO, s.r.o. — rodinná firma založená 1995 v Praze. Tři divize: sla
 - Šedý text: `#747474` (text-light)
 - Světlé pozadí: `#f5f5f5` (gray-light)
 
-## Struktura stránek
+## Struktura stránek (15 stránek)
 | URL | Soubor | Popis |
 |-----|--------|-------|
 | `/` | `app/page.tsx` | Homepage — slider (9 obrázků) + 3 divize |
 | `/o-nas` | `app/o-nas/page.tsx` | O firmě, hodnoty, certifikáty |
-| `/slaboproude-systemy` | `app/slaboproude-systemy/page.tsx` | 6 služeb: EPS, EZS, EKV, ERO, CCTV, telefony |
-| `/realizace-staveb` | `app/realizace-staveb/page.tsx` | 3 služby: stavby, rekonstrukce, zateplení |
+| `/slaboproude-systemy` | `app/slaboproude-systemy/page.tsx` | Hub: 6 flip karet → detail stránky |
+| `/divize-elektro-eps` | `app/divize-elektro-eps/page.tsx` | EPS — požární signalizace |
+| `/divize-elektro-ezs` | `app/divize-elektro-ezs/page.tsx` | EZS — zabezpečovací systém |
+| `/divize-elektro-ekv` | `app/divize-elektro-ekv/page.tsx` | EKV — kontrola vstupu |
+| `/divize-elektro-ero` | `app/divize-elektro-ero/page.tsx` | ERO — ozvučovací systémy |
+| `/kamerove-systemy` | `app/kamerove-systemy/page.tsx` | CCTV — kamerové systémy |
+| `/domaci-telefony` | `app/domaci-telefony/page.tsx` | Domácí telefony |
+| `/realizace-staveb` | `app/realizace-staveb/page.tsx` | Hub: 3 flip karty → detail stránky |
+| `/realizace-staveb-detail` | `app/realizace-staveb-detail/page.tsx` | Kompletní realizace staveb |
+| `/rekonstrukce` | `app/rekonstrukce/page.tsx` | Rekonstrukce |
+| `/zatepleni-budov` | `app/zatepleni-budov/page.tsx` | Zateplení budov |
 | `/hausboty` | `app/hausboty/page.tsx` | Hausbóty — text + galerie 10 fotek |
 | `/kontakt` | `app/kontakt/page.tsx` | Kontaktní údaje + Google Maps |
 
@@ -36,6 +46,7 @@ Firma LAKRO, s.r.o. — rodinná firma založená 1995 v Praze. Tři divize: sla
 - `PageHero.tsx` — hero banner s obrázkem a titulem pro podstránky
 - `FlipCard.tsx` — otáčecí karty služeb (hover efekt)
 - `ImageGallery.tsx` — galerie s autoplay a lightboxem
+- `ServiceDetail.tsx` — šablona pro detail služby (text + obrázek)
 
 ## Obrázky
 Všechny v `public/images/`:
@@ -59,7 +70,7 @@ Ve složce `../static-copy/lakro.eu/` je kompletní wget mirror původního Word
 - Kontaktní formulář
 - Favicon z loga
 - Optimalizace obrázků (WebP)
-- Nasazení (Vercel / Netlify / Cloudflare Pages)
+- Připojit vlastní doménu lakro.eu na Vercelu
 
 ## Pravidla
 - Jazyk webu je čeština
