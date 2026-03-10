@@ -14,42 +14,42 @@ const services = [
     description:
       "Elektronická požární signalizace (EPS) je vyhrazené požárně bezpečnostní zařízení, které pomocí hlásičů zajišťuje včasnou detekci požáru v objektu. Systém umožňuje automatické ovládání požárních klapek, dveří a dalších zařízení.",
     image: "/images/services/divize_elektro_eps.jpg",
-    href: "/slaboproude-systemy#eps",
+    href: "/divize-elektro-eps",
   },
   {
     title: "EZS",
     description:
       "Elektronický zabezpečovací systém (EZS) je systém, který detekuje narušení střeženého objektu nežádoucí osobou a signalizuje poplachový stav. Zajišťuje ochranu majetku a osob.",
     image: "/images/services/divize_elektro_ezs.jpg",
-    href: "/slaboproude-systemy#ezs",
+    href: "/divize-elektro-ezs",
   },
   {
     title: "EKV",
     description:
       "Elektronická kontrola vstupu (EKV) je systém, který slouží ke kontrole a regulaci vstupů osob do objektu. Umožňuje definovat přístupová práva a zaznamenávat pohyb osob.",
     image: "/images/services/divize_elektro_ekv.jpg",
-    href: "/slaboproude-systemy#ekv",
+    href: "/divize-elektro-ekv",
   },
   {
     title: "ERO",
     description:
       "Ozvučovací systémy (ERO) jsou systémy veřejného ozvučení používané k oslovení co nejširšího okruhu osob. Slouží pro evakuační rozhlasy a běžné ozvučení objektů.",
     image: "/images/services/divize_elektro_ero.jpg",
-    href: "/slaboproude-systemy#ero",
+    href: "/divize-elektro-ero",
   },
   {
     title: "Kamerové systémy",
     description:
       "Z hlediska zajištění bezpečnosti je kamerový systém (CCTV), který navíc obsahuje nahrávací zařízení, jedním z nejúčinnějších prostředků pro ochranu majetku a osob.",
     image: "/images/services/divize_elektro_kamerove_systemy.jpg",
-    href: "/slaboproude-systemy#cctv",
+    href: "/kamerove-systemy",
   },
   {
     title: "Domácí telefony",
     description:
       "Domácí telefony a videotelefony jsou nedílnou součástí moderních bytových domů. Umožňují komunikaci s návštěvníky a bezpečné ovládání vstupních dveří.",
     image: "/images/services/divize_elektro_domaci_telefony.jpg",
-    href: "/slaboproude-systemy#telefony",
+    href: "/domaci-telefony",
   },
 ];
 

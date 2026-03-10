@@ -14,21 +14,21 @@ const services = [
     description:
       "Zaměřujeme se na výstavbu bytových domů, občanských staveb a rodinných domů, což je obor, ve kterém má naše firma nejdelší tradici. Zajistíme kompletní realizaci od základů po kolaudaci.",
     image: "/images/services/realizace_staveb_realizace_staveb.jpg",
-    href: "/realizace-staveb#stavby",
+    href: "/realizace-staveb-detail",
   },
   {
     title: "Rekonstrukce",
     description:
       "Každá budova má s ohledem na svou funkci a použité materiály omezenou životnost. I přes maximální péči, stavební materiály stárnou a je třeba je obnovovat. Zajistíme kompletní rekonstrukce objektů.",
     image: "/images/services/realizace_staveb_rekonstrukce.jpg",
-    href: "/realizace-staveb#rekonstrukce",
+    href: "/rekonstrukce",
   },
   {
     title: "Zateplení budov",
     description:
       "Zateplení budov je v současnosti velmi využívanou metodou revitalizace. Dříve byly budovány stavby s nedostatečnou izolací. Zateplením dosáhnete výrazných úspor na vytápění.",
     image: "/images/services/realizace_staveb_zatepleni.jpg",
-    href: "/realizace-staveb#zatepleni",
+    href: "/zatepleni-budov",
   },
 ];
 
